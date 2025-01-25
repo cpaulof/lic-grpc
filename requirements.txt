@@ -1,0 +1,11 @@
+# Core dependencies
+grpcio>=1.68.1                # gRPC framework
+protobuf==5.28.1              # Protocol Buffers serialization
+torch>=2.0.0                  # PyTorch for ML model
+peewee>=3.17.0                # ORM for SQLite
+requests>=2.31.0              # HTTP requests for scraping
+beautifulsoup4>=4.12.3        # HTML parsing
+tokenizers>=0.15.2            # Byte-level BPE tokenizer
+
+# Development/testing
+pytest>=8.0.0                 # Testing framework

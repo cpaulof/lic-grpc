@@ -1,0 +1,1 @@
+python -m grpc_tools.protoc -I./server/protos --python_out=./server --pyi_out=./server --grpc_python_out=./server ./server/protos/*.proto

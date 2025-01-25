@@ -1,0 +1,48 @@
+// proto for changing server configurations
+
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+option java_package = "com.licscrap.config";
+option java_outer_classname = "Config";
+option objc_class_prefix = "CONF";
+
+package config;
+
+service ConfigService {
+    rpc setConfig(ConfigRequest) returns (ConfigResponse){}
+}
+
+// message Publication{
+//     string name = 1;
+//     string title = 2;
+//     string url = 3;
+//     string description = 4;
+//     string content = 5;
+//     string hierarchy = 6;
+//     // url_source = ForeignKeyField(UrlSource, backref='publications')
+//     google.protobuf.Timestamp pub_date = 7;
+//     string art_type = 8;
+//     float prob = 9;
+//     bool content_fetched = 10;
+//     google.protobuf.Timestamp  created_at = 11;
+//     // google.protobuf.Timestamp s = 4;
+//     int32 mark = 12;
+//     int32 status = 13;
+//     google.protobuf.Timestamp due_date = 14;
+//     int32 due_reason = 15;
+//     int32 id = 16;
+// }
+
+
+message ConfigRequest{
+    int32 id = 1;
+    string type = 2;
+}
+
+message ConfigResponse{
+    int32 id = 1;
+    string type = 2;
+}
