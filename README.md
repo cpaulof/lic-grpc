@@ -1,4 +1,4 @@
-#Lic gRPC
+# Lic gRPC
 A backend system for scraping, processing, and serving legal/publication data from official sources like Brazil's DOU (Diário Oficial da União).
 
 ---
